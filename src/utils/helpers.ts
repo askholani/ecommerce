@@ -1,6 +1,6 @@
 import axios, { AxiosResponse, AxiosError } from 'axios'
 import { itemType } from '../context/CartContex'
-import useSWR from 'swr'
+import { useSWR } from 'swr'
 export const actionADD = (oldItems: itemType[], newItems: itemType) => {
   // cek data array
   console.log('oldItems', oldItems)
