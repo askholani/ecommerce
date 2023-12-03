@@ -11,7 +11,7 @@ import { actionADD } from '../utils/helpers'
  */
 type CartAction =
   | { type: 'GET' }
-  | { type: 'ADD'; item?: itemType }
+  | { type: 'ADD'; item?: any }
   | { type: 'LOCAL' }
   | { type: 'REMOVE'; indexCart: number }
   | { type: 'SELECT'; indexCart: number; selected: boolean }

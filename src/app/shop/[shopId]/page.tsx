@@ -83,7 +83,7 @@ export default function Page() {
   }
 
   const handleAddCartLocal = () => {
-    const data = {
+    const data: any = {
       id: idProduct,
       name: name,
       image: image,
@@ -95,10 +95,9 @@ export default function Page() {
       categories: categoriesP,
       collections: collectionsP,
     }
+    dispatch({ type: 'ADD', item: data })
+    dispatch({ type: 'LOCAL' })
   }
-
-  // dispatch({ type: 'ADD', item: data })
-  // dispatch({ type: 'LOCAL' })
 
   return (
     <Fragment>
